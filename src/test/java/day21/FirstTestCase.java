@@ -9,9 +9,13 @@ public class FirstTestCase {
 		System.out.println("Testing...");
 		
 		ChromeDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
 		
 		driver.get("https://www.opencart.com/index.php?route=cms/demo");
+	
+	
 		String actualTitle = driver.getTitle();
+		
 		
 		if(actualTitle.equals("OpenCart - Demo")) {
 			System.out.println("Pass");
@@ -21,9 +25,7 @@ public class FirstTestCase {
 		System.out.println("Actual Title: " + actualTitle);
 		}
 		
-		
-		
-		
+		driver.quit();
 		
 	}
 
