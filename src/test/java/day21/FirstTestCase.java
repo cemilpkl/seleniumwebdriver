@@ -17,6 +17,8 @@ public class FirstTestCase {
 			System.out.println("Pass");
 		}else {
 			System.out.println("Fail");
+			
+		System.out.println("Actual Title: " + actualTitle);
 		}
 		
 		
